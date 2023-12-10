@@ -1,26 +1,6 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden;
+body {
+    background-color: black;
+    overflow-x: hidden;
 }
-.dd {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-.dd h1 {
-    position: absolute;
-    top: 50%; /* Modifier la position verticale selon votre préférence */
-    left: 50%; /* Modifier la position horizontale selon votre préférence */
-    transform: translate(-50%, -50%); /* Permet de centrer le texte */
-    font-size: 3em; /* Taille du texte */
-    color: white; /* Couleur du texte */
-    z-index: 999; /* Pour placer le texte au-dessus de l'iframe */
-}
-iframe {
-    width: 100%;
-    height: 110%;
-    border: none;
-}
+
+

@@ -4,16 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.521/build/spline-viewer.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>3d </title>
-
 </head>
 <body>
-    
-    <div class="dd">
-        <h1>TEST</h1>
-        <iframe src='https://my.spline.design/macbookprocopy-3a4a935ddb95200b7cff6ed1a2c2753e/' frameborder='0'></iframe>
+    <div class="h-screen ">
+        <div class="text-white flex gap-2 w-screen justify-center items-center mt-10">
+            <p class="h-10 w-20 rounded-xl bg-neutral-950 flex justify-center items-center text-center hover:bg-neutral-900 duration-200 cursor-pointer">Games</p>
+            <p class="h-10 w-20 rounded-xl bg-neutral-950 flex justify-center items-center text-center hover:bg-neutral-900 duration-200 cursor-pointer">Stats</p>
+            <p class="h-10 w-20 rounded-xl bg-neutral-950 flex justify-center items-center text-center hover:bg-neutral-900 duration-200 cursor-pointer">Donate</p>
+        </div>
+        <div class="h-[85vh] w-screen flex justify-between items-center overflow-hidden">
+            <div class="flex items-center justify-between w-screen ">
+                <div class=" h-10 w-10"></div>
+                <div>
+                    <h1 class="text-white text-7xl font-bold flex-1">Eco Quest</h1>
+
+                </div>
+                <div class="">
+                    <spline-viewer url="https://prod.spline.design/ZHk5KF3p-0AbRRpR/scene.splinecode"></spline-viewer>
+                </div>
+            </div>
+        </div>
     </div>
+
+        <div class=" flex h-screen w-screen bg-neutral-950 flex-col items-center gap-10 justify-center ">
+            <h1 class="text-7xl font-bold text-white mb-10">Stats</h1>
+
+            <div class="flex flex-col items-center justify-center gap-2 text-white">
+                <div class="flex gap-5">
+                    <p class="text-6xl font-bold">10</p>
+                    <img src="https://3i-l-eight.vercel.app/ressources/img/tree.svg" alt="water-icon">
+                </div>
+                <p class="text-4xl">billions of trees planted.</p>
+
+            </div>
+            <div class="flex flex-col items-center justify-center  gap-2 text-white">
+                <div class="flex gap-5">
+                    <p class="text-6xl font-bold">14</p>
+                    <img src="https://3i-l-eight.vercel.app/ressources/img/water.svg" alt="water-icon">
+
+                </div>
+                <p class="text-4xl">billions m3 of water saved.</p>
+
+            </div>
+            <div class="flex flex-col items-center justify-center  gap-2 text-white">
+                <div class="flex gap-5">
+                    <p class="text-6xl font-bold">41</p>
+                    <img src="https://3i-l-eight.vercel.app/ressources/img/recycle.svg" alt="water-icon">
+
+                </div>
+                <p class="text-4xl">billions tons of plastic recycled.</p>
+            </div>
+            <div class="flex flex-col items-center justify-center  gap-2 text-white">
+                <div class="flex gap-5">
+                    <p class="text-6xl font-bold">145</p>
+                    <img src="https://3i-l-eight.vercel.app/ressources/img/euro.svg" alt="water-icon">
+
+                </div>
+                <p class="text-4xl">billions collected for our planet.</p>
+            </div>
+
+        </div>
 </body>
 </html>
