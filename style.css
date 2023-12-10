@@ -4,13 +4,23 @@ body, html {
     height: 100%;
     overflow: hidden;
 }
-iframe {
-  
-    width: 100%;
-    height: 110%;
-}
 .dd {
+    position: relative;
+    width: 100%;
     height: 100vh;
-    width: 100vw;
     overflow: hidden;
+}
+.dd h1 {
+    position: absolute;
+    top: 50%; /* Modifier la position verticale selon votre préférence */
+    left: 50%; /* Modifier la position horizontale selon votre préférence */
+    transform: translate(-50%, -50%); /* Permet de centrer le texte */
+    font-size: 3em; /* Taille du texte */
+    color: white; /* Couleur du texte */
+    z-index: 999; /* Pour placer le texte au-dessus de l'iframe */
+}
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
 }
